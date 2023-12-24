@@ -4,7 +4,7 @@
 }
 body {
     background-color: gray;
-    font-family: Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 .conteiner{
@@ -31,6 +31,7 @@ p {
     font-size: 20px;
     padding-top: 40px;
 }
+
 hr {
     margin: auto;
     width: 60%;
@@ -78,19 +79,19 @@ hr {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
 }
 .gallery__item--2 {
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 1;
-    grid-row-end: 7;
+    grid-row-end: 9;
 }
 .gallery__item--3 {
     grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
 }
 
   button{
@@ -109,19 +110,48 @@ hr {
 
 /* Section setings */
 #section0 {
-    background-color: rgb(119, 119, 119);
+    background-image: url(Images/sec0.jpg); 
+    background-position: center center;
+    background-size: cover; 
 }
 #section1 {
     background-color: rgb(94, 94, 94);
 }
 #section2 {
-    background-color: rgb(70, 70, 70);
+    background-image: url(Images/sec2.jpg); 
+    background-position: center center;
+    background-size: cover; 
 }
 #section3 {
-    background-color: rgb(54, 54, 54);
+    background-image: url(Images/sec3.jpg); 
+    background-position: center center;
+    background-size: cover; 
 }
 #section4 {
-    background-color: rgb(34, 34, 34);
+    background-image: url(Images/sec4.jpg); 
+    background-position: center center;
+    background-size: cover; 
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 46px;
+        padding: 20px;
+    }
+    h3 {
+        font-size: 26px;
+        padding: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+        padding-top: 30px;
+    }
 }
 @media (max-width: 880px) {
     h1 {
@@ -143,9 +173,10 @@ hr {
         font-size: 18px;
         padding-top: 30px;
     }
+    
 }
 
-@media (max-width: 666px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 40px;
         padding: 10px;
@@ -164,63 +195,63 @@ hr {
     p {
         font-size: 16px;
         padding-top: 20px;
+        text-align: center;
     }
     .item {
-        width: 80%;
+        width: 90%;
+        text-align: center;
     }
+    .image img{
+        height: 60vw;
+    } 
+    .info img{
+        height: 40vw;
+    } 
 }
 
 @media (max-width: 666px) {
     h1 {
         font-size: 40px;
-        padding: 10px;
     }
     h2 {
         font-size: 30px;
-        padding: 10px;
     }
     h3 {
         font-size: 20px;
-        padding: 10px;
     }
     h4 {
         font-size: 18px;
     }
+    
     p {
         font-size: 16px;
         padding-top: 20px;
     }
-    .item {
-        width: 80%;
-    }
 }
 
-@media (max-width: 444px) {
+@media (max-width: 505px) {
     h1 {
         font-size: 30px;
-        padding: 10px;
     }
     h2 {
         font-size: 26px;
-        padding: 10px;
     }
     h3 {
         font-size: 20px;
-        padding: 10px;
-    }
-}
-@media (max-width: 336px) {
-    h1 {
-        font-size: 26px;
-        padding: 10px;
-    }
-    h2 {
-        font-size: 20px;
-        padding: 10px;
-    }
-    h3 {
-        font-size: 18px;
-        padding: 10px;
     }
 
+}
+@media (max-width: 380px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 16px;
+    }
 }
